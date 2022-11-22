@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a href="./index.html" class="logo link">
@@ -57,9 +57,9 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
-      <!-- герой -->
+      <!-- hero -->
       <section class="hero section">
         <div class="hero__container container">
           <h1 class="hero__title">
@@ -70,8 +70,8 @@
             Замовити послугу
           </button>
         </div>
-        <!-- FEATURES-->>
       </section>
+      <!-- FEATURES -->
       <section class="feature section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
@@ -126,7 +126,7 @@
           </ul>
         </div>
       </section>
-      <section class="examples section">
+      <!-- <section class="examples section">
         <div class="container">
           <h2 class="examples__title">Чим ми займаємося</h2>
           <ul class="pictures__list list">
@@ -159,19 +159,42 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="person__list list">
             <li class="person__list-item">
-              <img
-                class="person__list-pictures"
-                src="./images/team-card-1.jpg"
-                alt="Усміхнений хлопець в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card-des-1-1x-min.jpg 1x,
+                    ./images/team/team-card-des-1-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-tab-1-1x-min.jpg 1x,
+                    ./images/team/team-card-tab-1-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-mob-1-1x-min.jpg 1x,
+                    ./images/team/team-card-mob-1-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="person__list-pictures"
+                  src="./images/team/team-card-des-1-1x-min.jpg"
+                  alt="Усміхнений хлопець в окулярах"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="person__list-wrap">
                 <h3 class="person__list-name">Ігор Дем'яненко</h3>
                 <p class="person__list-text">Product Designer</p>
@@ -205,13 +228,36 @@
               </div>
             </li>
             <li class="person__list-item">
-              <img
-                class="team-pictures"
-                src="./images/team-card-2.jpg"
-                alt="Усміхнена дівчина в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card-des-2-1x-min.jpg 1x,
+                    ./images/team/team-card-des-2-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-tab-2-1x-min.jpg 1x,
+                    ./images/team/team-card-tab-2-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-mob-2-1x-min.jpg 1x,
+                    ./images/team/team-card-mob-2-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-pictures"
+                  src="./images/team/team-card-des-2-1x-min.jpg"
+                  alt="Усміхнена дівчина в окулярах"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="person__list-wrap">
                 <h3 class="person__list-name">Ольга Рєпіна</h3>
                 <p class="person__list-text">Frontend Developer</p>
@@ -245,13 +291,36 @@
               </div>
             </li>
             <li class="person__list-item">
-              <img
-                class="team-pictures"
-                src="./images/team-card-3.jpg"
-                alt="Усміхнений хлопець"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card-des-3-1x-min.jpg 1x,
+                    ./images/team/team-card-des-3-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-tab-3-1x-min.jpg 1x,
+                    ./images/team/team-card-tab-3-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-mob-3-1x-min.jpg 1x,
+                    ./images/team/team-card-mob-3-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-pictures"
+                  src="./images/team/team-card-des-3-1x-min.jpg"
+                  alt="Усміхнений хлопець"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="person__list-wrap">
                 <h3 class="person__list-name">Микола Тарасов</h3>
                 <p class="person__list-text">Marketing</p>
@@ -285,13 +354,36 @@
               </div>
             </li>
             <li class="person__list-item">
-              <img
-                class="team-pictures"
-                src="./images/team-card-4.jpg"
-                alt="Усміхнений хлопець в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-card-des-4-1x-min.jpg 1x,
+                    ./images/team/team-card-des-4-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-tab-4-1x-min.jpg 1x,
+                    ./images/team/team-card-tab-4-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-card-mob-4-1x-min.jpg 1x,
+                    ./images/team/team-card-mob-4-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-pictures"
+                  src="./images/team/team-card-des-4-1x-min.jpg"
+                  alt="Усміхнений хлопець в окулярах"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="person__list-wrap">
                 <h3 class="person__list-name">Михайло Єрмаков</h3>
                 <p class="person__list-text">UI Designer</p>
@@ -372,7 +464,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="contact__footer">
           <a href="./index.html" class="link"
@@ -455,7 +547,7 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>

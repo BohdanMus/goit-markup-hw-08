@@ -4,8 +4,13 @@
 }
 .filter__list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+  @include tablet {
+    justify-content: center;
+  }
 }
 .filter-button {
   font-family: "Roboto";
@@ -39,7 +44,7 @@
   gap: 30px;
 }
 .gallery__list-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   transition-property: box-shadow;
   transition: var(--main-transition-duration)
     var(--main-transition-timing-function);
@@ -47,6 +52,12 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
   }
 }
 .gallery__list-top-wrap {
