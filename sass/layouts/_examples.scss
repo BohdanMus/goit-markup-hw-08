@@ -1,6 +1,10 @@
 /* EXAMPLES */
 .examples {
   padding-top: 0;
+  display: none;
+  @include desktop {
+    display: block;
+  }
 }
 .examples__title {
   font-weight: 700;

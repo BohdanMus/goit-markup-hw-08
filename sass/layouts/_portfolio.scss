@@ -55,10 +55,15 @@
   }
   @include tablet {
     width: calc((100% - 30px) / 2);
+    display: flex;
   }
   @include desktop {
     width: calc((100% - 60px) / 3);
   }
+}
+.gallery__list-link {
+  display: flex;
+  flex-direction: column;
 }
 .gallery__list-top-wrap {
   position: relative;
@@ -87,6 +92,8 @@
   background-color: var(--main-background-color);
   display: block;
   border: 1px solid #eeeeee;
+  flex-grow: 1;
+  margin-bottom: auto;
 }
 .gallery__list-title {
   font-weight: 700;
